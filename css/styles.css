@@ -191,6 +191,9 @@ body {
   font-weight: 700;
   line-height: 1.14;
 }
+.title {
+  margin-bottom: 10px;
+}
 .section-team {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -244,7 +247,14 @@ body {
 }
 
 /* Наша команда */
-
+.card-item {
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  padding: 30px 59px 59px 60px;
+}
 .name {
   font-weight: 500;
   font-size: 16px;
