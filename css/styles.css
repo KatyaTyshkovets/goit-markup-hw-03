@@ -9,6 +9,22 @@
   --bcr-footer: #2f303a;
   --btn-hov-foc-color: #2196f3;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 
 body {
   background-color: var(--primary-white-color);
@@ -18,8 +34,37 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .list {
   list-style: none;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.container-contact {
+  margin-left: auto;
+}
+.header-list {
+  display: flex;
+}
+.header-logo {
+  margin-right: 93px;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .logo {
@@ -59,39 +104,48 @@ body {
   text-decoration: none;
 
   color: var(--title-text-color);
+  margin-right: 0;
+  margin-left: 50px;
 }
 .auth-nav,
 .site-nav {
   font-weight: 500;
   line-height: 1.14;
+  display: flex;
 }
 
 /* Герой */
 
 .hero {
   background-color: var(--bcr-footer);
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 .hero-title {
   color: var(--primary-white-color);
-
+  margin-bottom: 39px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
 }
 .button {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-
   cursor: pointer;
+
+  border: transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 0;
+  margin-bottom: 30px;
 
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
-  text-align: center;
 }
 
 .button:hover,
@@ -117,7 +171,14 @@ body {
   font-weight: 700;
   line-height: 1.14;
 }
-
+.section-team {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .text,
 .text-list {
   color: var(--title-text-color);
@@ -125,6 +186,7 @@ body {
 
 .text-list {
   line-height: 1.71;
+  margin-top: 0;
 }
 
 .text {
@@ -133,7 +195,10 @@ body {
   text-align: center;
 }
 /* Чем мы занимаемся */
-
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .section-title {
   color: var(--primary-text-color);
 
@@ -141,6 +206,9 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /* Наша команда */
@@ -160,9 +228,14 @@ body {
 
 .page-footer {
   background-color: var(--bcr-footer);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-styles {
   color: var(--primary-white-color);
+
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -172,6 +245,8 @@ body {
 }
 .footer .link {
   text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 9px;
 }
 .footer .link {
   color: var(--color-address);
