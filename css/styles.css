@@ -24,6 +24,7 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 
 body {
@@ -57,6 +58,7 @@ body {
 .container-contact {
   margin-left: auto;
 }
+
 .header-list {
   display: flex;
 }
@@ -92,8 +94,14 @@ body {
 .auth-nav .link:hover {
   color: var(--accent-color);
 }
-
+.auth-nav {
+  margin-left: auto;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 }
 .site-nav,
@@ -104,9 +112,8 @@ body {
   text-decoration: none;
 
   color: var(--title-text-color);
-  margin-right: 0;
-  margin-left: 50px;
 }
+
 .auth-nav,
 .site-nav {
   font-weight: 500;
@@ -164,7 +171,17 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
 }
-
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-right: -30px;
+}
+.feature-item {
+  width: calc(100% / 4 - 30px);
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
 .feature-list .title {
   color: var(--primary-text-color);
 
@@ -211,6 +228,18 @@ body {
   margin-bottom: 50px;
 }
 
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.work-item {
+  width: calc(100% / 3 -30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 /* Наша команда */
 
 .name {
@@ -218,12 +247,25 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .section-team {
   background-color: var(--primary-bcr-color);
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.team-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
 /* Футер */
 
 .page-footer {
@@ -267,6 +309,10 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1x solid transparent;
 }
 
 .project-title {
@@ -293,4 +339,25 @@ body {
   background-color: var(--accent-color);
 
   cursor: pointer;
+}
+.item {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 50px;
+  padding-top: 94px;
+}
+.buttons:not(:last-child) {
+  margin-right: 8px;
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.project-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
