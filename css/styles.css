@@ -179,7 +179,6 @@ body {
 }
 .feature-list {
   display: flex;
-  min-width: calc((100% - 90px) / 4);
   justify-content: space-between;
 }
 
@@ -207,8 +206,7 @@ body {
 
 .text-list {
   line-height: 1.71;
-  font-size: 14px;
-  letter-spacing: 0.03em;
+  width: 270px;
 }
 
 .text {
